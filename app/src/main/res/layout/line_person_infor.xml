@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/imagePerSon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/background_line"
+        />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/imageNext"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageViewDot"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/txtViewName"
+        android:text="Tên người"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_toRightOf="@+id/imagePerSon"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtViewDistance"
+        android:text="0.2 Miles Away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_toRightOf="@+id/imagePerSon"
+        android:layout_below="@+id/txtViewName"
+        android:textColor="#5a5555"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/imageViewDot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/txtViewDistance"
+        android:layout_below="@+id/txtViewName"
+        />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/imageViewDotOff"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/txtViewDistance"
+        android:layout_below="@+id/txtViewName"
+        />
+
+    <TextView
+        android:id="@+id/txtViewTime"
+        android:text="Online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_toRightOf="@+id/imageViewDot"
+        android:layout_below="@+id/txtViewName"
+        android:textColor="#f17d08"
+        android:layout_marginLeft="0dp"
+        />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/imageViewStar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/imagePerSon"
+        android:layout_below="@+id/txtViewDistance"
+        />
+
+    <TextView
+        android:id="@+id/txtViewScore"
+        android:text="4.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_toRightOf="@+id/imageViewStar"
+        android:layout_below="@+id/txtViewDistance"
+        android:textColor="#5a5555"
+        android:layout_marginTop="3dp"
+        />
+
+</RelativeLayout>
